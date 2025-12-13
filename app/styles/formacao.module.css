@@ -1,0 +1,107 @@
+.Container {
+    padding: 40px 20px;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 60px;
+    color: #ffffff;
+}
+
+.linha {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.linha::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #00ff88;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+.linhaItem {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+}
+
+.linhaContent {
+    background-color: #3a4049;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.rightItem {
+    left: 50%;
+}
+
+.leftItem {
+    left: 0;
+    padding-right: 60px;
+}
+
+.rightItem {
+    padding-left: 60px;
+}
+
+.anoBox {
+    color: #00ff88;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.linhaCirculo {
+    width: 16px;
+    height: 16px;
+    background-color: #00ff88;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    top: 25px;
+}
+
+.leftItem .linhaCirculo  {
+    right: -8px; 
+}
+
+.rightItem .linhaCirculo  {
+    left: -8px; 
+}
+@media screen and (max-width: 768px) {
+    .linha::after {
+        left: 20px;
+    }
+    .linhaItem {
+        width: 100%;
+        padding-left: 60px; 
+        padding-right: 15px;
+        left: 0;
+    }
+    
+    .leftItem .linhaCirculo ,
+    .rightItem .linhaCirculo {
+        left: 12px;
+        right: auto;
+    }
+
+    .linhaContent {
+        border-left: 4px solid #00ff88; 
+    }
+}

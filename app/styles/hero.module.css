@@ -1,0 +1,117 @@
+.hero {
+  padding: 120px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  color: white;
+}
+
+/* IMAGEM */
+.img {
+  border-radius: 25px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* TEXTOS */
+.texts {
+  max-width: 480px;
+}
+
+.oi {
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #00ff9d;
+  margin: 20px 0;
+  line-height: 3.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.desc {
+  font-size: 15px;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+/* FORMAS / IMAGEM LATERAL */
+.shapes {
+  position: relative;
+}
+
+.square1 {
+  width: 25rem;
+  height: 30rem;
+  border-radius: 35px;
+  margin-left: 40px;
+  max-width: 100%;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 100px 6%;
+    text-align: center;
+  }
+
+  .texts {
+    max-width: 100%;
+  }
+
+  .oi {
+    font-size: 24px;
+  }
+
+  .title {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+
+  .desc {
+    font-size: 14px;
+  }
+
+  .square1 {
+    width: 20rem;
+    height: 24rem;
+    margin-left: 0;
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  .hero {
+    padding: 80px 5%;
+  }
+
+  .oi {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .desc {
+    font-size: 13px;
+  }
+
+  .square1 {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+}

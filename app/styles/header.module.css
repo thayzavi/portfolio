@@ -1,0 +1,93 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #00ff9d;;
+  font-size: 1.5rem;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.curriculo {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #00ff9d;;
+  border-radius: 6px;
+  font-weight: 500;
+}
+.curriculoMobile{
+  display: none;
+}
+.hamburger {
+  display: none;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  .curriculo {
+    display: none;
+  }
+
+  .curriculoMobile {
+    display: inline-block;
+  }
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #070707;
+    transition: 0.3s;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #292626;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 1rem 0;
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+  }
+
+  .nav.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .curriculo {
+    display: none;
+  }
+
+  .curriculoMobile {
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    border: 1px solid #00ff9d;;
+    border-radius: 6px;
+  }
+}
+

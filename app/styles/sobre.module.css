@@ -1,0 +1,46 @@
+.sobre {
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    color: white;
+}
+.img{
+  border-radius: 25px;
+}
+
+
+.text h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #00ff9d;
+}
+@media (max-width: 768px) {
+    .sobre {
+        padding: 80px 6%;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .text h2 {
+        font-size: 26px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+    .sobre {
+        padding: 60px 5%;
+        gap: 30px;
+    }
+
+    .text h2 {
+        font-size: 22px;
+    }
+}

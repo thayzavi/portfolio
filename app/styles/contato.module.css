@@ -1,0 +1,118 @@
+.contato {
+  padding: 100px 8%;
+  text-align: center;
+  color: white;
+}
+
+/* ===== TÍTULO ===== */
+.contato h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* ===== CARD ===== */
+.card {
+  background: #4a4a4a;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ===== LINKS ===== */
+.link {
+  background: #8e8e8e;
+  padding: 14px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.link:hover {
+  background: #00ff9d;
+  color: #121212;
+}
+
+/* ===== TEXTO ===== */
+.text {
+  margin: 30px 0 15px;
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+/* ===== BOTÃO ===== */
+.cta {
+  background: #00ff9d;
+  padding: 14px 28px;
+  border-radius: 12px;
+  color: #121212;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.cta:hover {
+  transform: scale(1.05);
+  background: #00e68a;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .contato {
+    padding: 80px 6%;
+  }
+
+  .contato h2 {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .cta {
+    padding: 12px 24px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  .contato {
+    padding: 60px 5%;
+  }
+
+  .contato h2 {
+    font-size: 22px;
+  }
+
+  .card {
+    padding: 20px;
+    border-radius: 14px;
+  }
+
+  .link {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .cta {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,89 @@
+.projetos {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: white;
+}
+
+.carouselContainer {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+.card h3{
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.btn:hover {
+  background: #00ffaa;
+  color: black;
+}
+
+.carousel {
+  width: 80%;
+  overflow: hidden;
+}
+
+.inner {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.5s ease;
+}
+
+.card {
+  min-width: 30%;
+  background: #2e2d2d;
+  border-radius: 10px;
+  padding: 3rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.imagem {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.btnLink {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.6rem 1.2rem;
+  background: #00ffaa;
+  color: rgb(255, 253, 253);
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btnLink:hover {
+  background: #00cc88;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .card {
+    min-width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    min-width: 100%;
+  }
+}
