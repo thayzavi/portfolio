@@ -23,7 +23,7 @@ export default function Contato() {
         </Link>
 
         <Link
-          href="https://www.linkedin.cóm/in/thayza-silva-b01474203 "
+          href="https://www.linkedin.com/in/thayza-silva-b01474203 "
           target="_blank"
           className={styles.link}
         >
