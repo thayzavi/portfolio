@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from '@/app/styles/projetos.module.css';
 import Link from "next/link";
 
@@ -62,7 +62,21 @@ export default function Projetos() {
   ];
 
   const [index, setIndex] = useState(0);
-  const maxIndex = projetos.length - 3;
+  const [cardsVisiveis, setCardsVisiveis] = useState(3);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setCardsVisiveis(window.innerWidth < 768 ? 1 : 3);
+      setIndex(0); // evita bug ao redimensionar
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const maxIndex = projetos.length - cardsVisiveis;
+  const deslocamento = 100 / cardsVisiveis;
 
   const next = () => {
     if (index < maxIndex) setIndex(index + 1);
@@ -82,7 +96,7 @@ export default function Projetos() {
         <div className={styles.carousel}>
           <div
             className={styles.inner}
-            style={{ transform: `translateX(-${index * 33.33}%)` }}
+            style={{ transform: `translateX(-${index * deslocamento}%)` }}
           >
             {projetos.map((p, i) => (
               <div className={styles.card} key={i}>
