@@ -57,7 +57,7 @@
 
     .card {
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 70px;
         justify-content: center;
     }
 }

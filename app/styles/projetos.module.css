@@ -75,8 +75,10 @@
   background: #00cc88;
 }
 
-/* Responsivo */
 @media (max-width: 900px) {
+  .projetos{
+    margin-top: 20px;
+  }
   .card {
     min-width: 45%;
   }
