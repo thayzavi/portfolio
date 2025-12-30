@@ -6,15 +6,11 @@
   gap: 40px;
   color: white;
 }
-
-/* IMAGEM */
 .img {
   border-radius: 25px;
   max-width: 100%;
   height: auto;
 }
-
-/* TEXTOS */
 .texts {
   max-width: 480px;
 }
@@ -41,11 +37,6 @@
   opacity: 0.9;
 }
 
-/* FORMAS / IMAGEM LATERAL */
-.shapes {
-  position: relative;
-}
-
 .square1 {
   width: 25rem;
   height: 30rem;
@@ -54,11 +45,7 @@
   max-width: 100%;
 }
 
-/* =========================
-   RESPONSIVIDADE
-========================= */
 
-/* Tablets */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
