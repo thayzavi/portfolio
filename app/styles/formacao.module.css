@@ -85,6 +85,9 @@
     left: -8px; 
 }
 @media screen and (max-width: 768px) {
+    .Container{
+        margin-top: 10rem;
+    }
     .linha::after {
         left: 20px;
     }

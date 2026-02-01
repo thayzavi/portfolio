@@ -38,12 +38,12 @@
     .sobre {
         padding: 80px 6%;
         flex-direction: column;
-        gap: 40px;
+        gap: 50px;
         text-align: center;
     }
 
     .img {
-        width: 70%;
+        width: 70% ;
         margin: 0 auto;
     }
 
@@ -56,8 +56,8 @@
     }
 
     .card {
-        flex-wrap: wrap;
-        gap: 70px;
+        flex-direction: column;
+        gap: 25px;
         justify-content: center;
     }
 }
