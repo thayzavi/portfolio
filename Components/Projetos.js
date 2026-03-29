@@ -6,6 +6,18 @@ import Link from "next/link";
 export default function Projetos() {
   const projetos = [
     {
+      img: "/img/crud-medico.jpg",
+      titulo: "CRUD de Médicos API",
+      desc: "API REST desenvolvida com Java e Spring Boot para gerenciamento de médicos, com operações de cadastro, listagem, atualização e exclusão (CRUD), utilizando boas práticas como DTO, validação e integração com banco de dados.",
+      link: "https://github.com/thayzavi/crud-medicos"
+    },
+    {
+      img: "/img/forum-hub.jpg",
+      titulo: "Fórum Hub",
+      desc: "Sistema backend desenvolvido com Java e Spring Boot inspirado em fóruns de discussão, com autenticação, gerenciamento de tópicos e respostas, aplicando conceitos de API REST, segurança e arquitetura em camadas.",
+      link: "https://github.com/thayzavi/forum-Hub"
+    },
+    {
       img: "/img/tpf.png",
       titulo: "Projeto Agente De IA - TPF",
       desc: "Este projeto é uma aplicação de chat interativo com Inteligência Artificial (IA) desenvolvida para otimizar a interação e o processamento de documentos.",
@@ -67,7 +79,7 @@ export default function Projetos() {
   useEffect(() => {
     const handleResize = () => {
       setCardsVisiveis(window.innerWidth < 768 ? 1 : 3);
-      setIndex(0); // evita bug ao redimensionar
+      setIndex(0); 
     };
 
     handleResize();

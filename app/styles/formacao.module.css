@@ -1,14 +1,31 @@
 .Container {
-    padding: 40px 20px;
-    color: #fff;
-    min-height: 100vh;
+padding: 70px 8%;
+  background: #d9ff5c;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  color: #cbffdf;
+}
+.Container::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 40px;
+  width: 140px;
+  height: 40px;
+  background: #d9ff5c;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
 }
 
 .titulo {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 60px;
-    color: #ffffff;
+    color: #4B6F1C;
 }
 
 .linha {
@@ -21,7 +38,7 @@
     content: '';
     position: absolute;
     width: 4px;
-    background-color: #00ff88;
+    background-color: rgb(117, 0, 82);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -34,7 +51,7 @@
 }
 
 .linhaContent {
-    background-color: #3a4049;
+    background: #7c003e;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -55,7 +72,7 @@
 }
 
 .anoBox {
-    color: #00ff88;
+    color: #fdbded;
     font-weight: bold;
     font-size: 1.1rem;
     margin-bottom: 10px;
@@ -65,12 +82,13 @@
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 5px;
+    color: #cbffdf;
 }
 
 .linhaCirculo {
     width: 16px;
     height: 16px;
-    background-color: #00ff88;
+    background-color: rgb(117, 0, 82);
     position: absolute;
     border-radius: 50%;
     z-index: 1;
@@ -105,6 +123,6 @@
     }
 
     .linhaContent {
-        border-left: 4px solid #00ff88; 
+        border-left: 4px solid #cbffdf; 
     }
 }

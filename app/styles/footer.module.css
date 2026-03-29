@@ -1,21 +1,19 @@
 .footer {
   width: 100%;
-  background: #1c1c1c;
+  background: #fcc4e9;
   color: white;
   font-family: "Poppins", sans-serif;
 }
 
-/* ===== PARTE DE CIMA ===== */
 .top {
   padding: 35px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, #141414, #1f1f1f);
+  background: #7c003e;;
   gap: 20px;
 }
 
-/* ===== LADO ESQUERDO ===== */
 .left {
   display: flex;
   flex-direction: column;
@@ -28,7 +26,7 @@
 }
 
 .logo span {
-  color: #00ff9d;
+  color: #3c7526;
 }
 
 .role {
@@ -41,7 +39,6 @@
   opacity: 0.8;
 }
 
-/* ===== LADO DIREITO ===== */
 .right {
   text-align: center;
 }
@@ -67,28 +64,23 @@
 }
 
 .social a:hover {
-  background: #00ff9d;
+  background: #2e5513;
   transform: translateY(-4px);
 }
 
-/* ===== BARRA INFERIOR ===== */
 .bottom {
-  background: #3a3a3a;
+  color: #580332;
+  background: #fcc4e9;
   padding: 10px;
   text-align: center;
   font-size: 13px;
 }
 
 .bottom span {
-  color: #00ff9d;
+  color: #580332;
   font-weight: 500;
 }
 
-/* =========================
-   RESPONSIVIDADE
-========================= */
-
-/* Tablets */
 @media (max-width: 768px) {
   .top {
     flex-direction: column;
@@ -109,7 +101,6 @@
   }
 }
 
-/* Celulares */
 @media (max-width: 480px) {
   .top {
     padding: 25px 5%;

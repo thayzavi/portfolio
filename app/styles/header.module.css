@@ -12,18 +12,19 @@
 }
 
 .logo span {
-  color: #00ff9d;;
+  color: #4B6F1C;
   font-size: 1.5rem;
 }
 
 .nav {
   display: flex;
+  color:#4B6F1C;
   gap: 2rem;
 }
 
 .curriculo {
+  background-color: #4B6F1C;
   padding: 0.6rem 1.2rem;
-  border: 1px solid #00ff9d;;
   border-radius: 6px;
   font-weight: 500;
 }

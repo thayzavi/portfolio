@@ -1,40 +1,60 @@
 .habilidades {
-  padding: 80px 8%;
+  padding: 90px 8%;
   text-align: center;
   color: white;
 }
 
-.circles {
-  margin-top: 45px;
+.habilidades h1 {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #4B6F1C;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  
+}
+
+.card {
+  background: #ffffff;
+  color: #7c003e;
+  border: 1px solid #e6e6e6;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(126, 124, 124, 0.2);
+}
+
+.lista {
   display: flex;
   flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 15px;
   justify-content: center;
-  gap: 40px;
 }
 
-.circle {
-  width: 90px;
-  height: 90px;
-  background: #e8e8e8;
-  border-radius: 50%;
+.item {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 36px;
-  color: #121212;
-  position: relative;
-  transition: 0.3s ease;
-  cursor: pointer;
-}
-
-.circle:hover {
-  background: #00ff9d;
-  transform: scale(1.1);
-}
-
-.circle span {
-  position: absolute;
-  bottom: -28px;
+  justify-content: flex-start;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #f5f5f5;
   font-size: 14px;
+  transition: 0.3s;
+  cursor: default;
+}
+
+
+.item:hover {
+  background: #4B6F1C;
   color: white;
+  transform: scale(1.05);
+}
+
+.item:hover::before {
+  background-color: white;
+  transform: scale(1.2);
 }

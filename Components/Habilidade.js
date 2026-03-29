@@ -1,33 +1,78 @@
 import styles from '@/app/styles/habilidades.module.css';
 
-import { FaJs, FaNodeJs, FaBootstrap, FaReact, FaGitAlt, FaJava, FaPython, FaHtml5, FaRobot } from "react-icons/fa";
-import { SiNextdotjs, SiFigma } from "react-icons/si";
-
 export default function Habilidades() {
-  const icons = [
-    { icon: <FaJs />, name: "JavaScript" },
-    { icon: <FaNodeJs />, name: "Node.js" },
-    { icon: <FaBootstrap />, name: "Bootstrap" },
-    { icon: <SiNextdotjs />, name: "Next.js" },
-    { icon: <FaReact />, name: "React" },
-    { icon: <SiFigma />, name: "Figma" },
-    { icon: <FaJava />, name: "Java" },
-    { icon: <FaReact />, name: "React Native" },
-    { icon: <FaGitAlt />, name: "Git" },
-    { icon: <FaPython />, name: "Python" },
-    { icon: <FaHtml5 />, name: "HTML5"},
-    { icon: <FaRobot />, name: "IA"},
+
+  const habilidades = [
+    {
+      categoria: "Front-end",
+      itens: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "React",
+        "React Native",
+        "Next.js",
+        "Bootstrap"
+      ]
+    },
+    {
+      categoria: "Back-end",
+      itens: [
+        "Node.js",
+        "Java",
+        "Python",
+        "Spring Boot"
+      ]
+    },
+    {
+      categoria: "Banco de Dados",
+      itens: [
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Neo4j"
+      ]
+    },
+    {
+      categoria: "Inteligência Artificial",
+      itens: [
+        "Gemini",
+        "ChatGPT",
+        "Prompt Engineering",
+        "Assistentes virtuais"
+      ]
+    },
+    {
+      categoria: "Ferramentas & Outros",
+      itens: [
+        "Git/GitHub",
+        "Figma",
+        "Scrum/Kanban",
+        "Jira/Trello",
+        "Swagger",
+        "CI/CD"
+        
+      ]
+    }
   ];
 
   return (
     <section id="habilidades" className={styles.habilidades}>
       <h1>Habilidades</h1>
 
-      <div className={styles.circles}>
-        {icons.map((item, index) => (
-          <div key={index} className={styles.circle}>
-            {item.icon}
-            <span>{item.name}</span>
+      <div className={styles.cardsContainer}>
+        {habilidades.map((grupo, index) => (
+          <div key={index} className={styles.card}>
+            <h2>{grupo.categoria}</h2>
+
+            <div className={styles.lista}>
+              {grupo.itens.map((item, i) => (
+                <div key={i} className={styles.item}>
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+
           </div>
         ))}
       </div>
