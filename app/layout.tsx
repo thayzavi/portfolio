@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "my-portfolio",
+  title: "Thayza Silva | Portfólio",
   description: "my portolio",
 };
 
