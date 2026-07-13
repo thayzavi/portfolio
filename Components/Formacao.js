@@ -9,7 +9,7 @@ export default function Formacao() {
     lado: "left",
   },
   {
-    ano: "2024 - Atual",
+    ano: "2024 - 2026",
     titulo: "Graduação em Análise e Desenvolvimento de Sistemas",
     descricao: "Formação pela Faculdade Senac - PE, com foco em desenvolvimento Full Stack, criação de APIs REST, banco de dados e boas práticas de engenharia de software.",
     lado: "right",

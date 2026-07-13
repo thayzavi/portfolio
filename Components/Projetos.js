@@ -70,6 +70,12 @@ export default function Projetos() {
       titulo: "DoaPe",
       desc: "DoaPE é um aplicativo desenvolvido em React Native com foco exclusivo em promover e facilitar a doação de sangue no estado de Pernambuco.",
       link: "https://github.com/thayzavi/DoaPe?tab=readme-ov-file"
+    },
+    {
+      img: "/img/bioLens.png",
+      titulo: "DoaPe",
+      desc: "O Bio Lens foi desenvolvido para auxiliar pesquisadores, estudantes e profissionais da área ambiental na identificação e classificação de organismos por meio de imagens. Utilizando Inteligência Artificial e Visão Computacional, o sistema analisa fotografias enviadas pelos usuários",
+      link: "https://biolens-v01.netlify.app/login"
     }
   ];
 

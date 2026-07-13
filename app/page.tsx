@@ -6,6 +6,7 @@ import Formacao from "@/Components/Formacao.js";
 import Projetos from "@/Components/Projetos.js";
 import Contato from "@/Components/Contato.js";
 import Footer from "@/Components/Footer.js";
+import Participacao from "@/Components/Participacoes.js";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Habilidades />
       <Formacao />
       <Projetos />
+      <Participacao/>
       <Contato />
       <Footer />
 

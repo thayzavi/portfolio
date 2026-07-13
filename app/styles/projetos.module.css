@@ -4,8 +4,8 @@
   color: white;
 }
 .projetos h1 {
-  font-size: 42px;
-  font-weight: 600;
+  font-size: clamp(2.3rem, 5vw, 3.5rem);
+  line-height: 1.1;
   margin-bottom: 40px;
   color: #4B6F1C;
 }

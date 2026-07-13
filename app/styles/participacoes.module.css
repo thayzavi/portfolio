@@ -1,0 +1,281 @@
+.participacoes {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 8%;
+  background: #fffafd;
+}
+
+.participacoes::before {
+  content: "";
+  position: absolute;
+  top: -170px;
+  right: -130px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: rgba(217, 255, 92, 0.45);
+  filter: blur(5px);
+}
+
+.participacoes::after {
+  content: "";
+  position: absolute;
+  bottom: -160px;
+  left: -130px;
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  background: rgba(124, 0, 62, 0.08);
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cabecalho {
+  max-width: 780px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.subtitulo {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #7c003e;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.titulo {
+  margin: 0 0 20px;
+  color: #4b6f1c;
+  font-size: clamp(2.3rem, 5vw, 3.5rem);
+  line-height: 1.1;
+}
+
+.titulo span {
+  color: #7c003e;
+}
+
+.introducao {
+  margin: 0;
+  color: #5f5f5f;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.card {
+  overflow: hidden;
+  border: 1px solid rgba(124, 0, 62, 0.1);
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 12px 35px rgba(67, 22, 48, 0.09);
+}
+
+.imagemContainer {
+  position: relative;
+  width: 100%;
+  height: 290px;
+  overflow: hidden;
+  background: #7c003e;
+}
+
+.imagem {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .imagem {
+  transform: scale(1.07);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(24, 5, 15, 0.05) 25%,
+    rgba(40, 3, 23, 0.78) 100%
+  );
+}
+
+.numero {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+.imagemInformacoes {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.categoria,
+.ano {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.categoria {
+  background: #d9ff5c;
+  color: #395413;
+}
+
+.ano {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: rgba(124, 0, 62, 0.8);
+  color: #ffffff;
+  backdrop-filter: blur(5px);
+}
+
+.conteudo {
+  padding: 28px;
+}
+
+.cardTitulo {
+  margin: 0 0 10px;
+  color: #7c003e;
+  font-size: 1.65rem;
+  line-height: 1.2;
+}
+
+.local {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0 0 18px;
+  color: #4b6f1c;
+  font-size: 0.94rem;
+  font-weight: 700;
+}
+
+.descricao {
+  margin: 0;
+  color: #626262;
+  font-size: 0.97rem;
+  line-height: 1.7;
+}
+
+.destaque {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 24px;
+  padding: 16px 18px;
+  border-left: 4px solid #7c003e;
+  border-radius: 4px 14px 14px 4px;
+  background: #fff1f9;
+}
+
+.destaque span {
+  color: #956a81;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.destaque strong {
+  color: #7c003e;
+  font-size: 0.94rem;
+}
+
+/* Tablet */
+
+@media screen and (max-width: 900px) {
+  .participacoes {
+    padding: 80px 6%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .imagemContainer {
+    height: 340px;
+  }
+}
+
+/* Celular */
+
+@media screen and (max-width: 600px) {
+  .participacoes {
+    padding: 70px 20px;
+  }
+
+  .cabecalho {
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  .titulo {
+    font-size: 2.25rem;
+  }
+
+  .introducao {
+    font-size: 0.97rem;
+  }
+
+  .grid {
+    gap: 24px;
+  }
+
+  .card {
+    border-radius: 20px;
+  }
+
+  .imagemContainer {
+    height: 240px;
+  }
+
+  .numero {
+    top: 16px;
+    left: 16px;
+    font-size: 2rem;
+  }
+
+  .imagemInformacoes {
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+  }
+
+  .conteudo {
+    padding: 24px 22px;
+  }
+
+  .cardTitulo {
+    font-size: 1.4rem;
+  }
+}
